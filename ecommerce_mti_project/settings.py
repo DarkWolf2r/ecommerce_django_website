@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,6 +41,7 @@ INSTALLED_APPS = [
 
     # Custom Apps
     'core',
+    'userauths',
 ]
 
 MIDDLEWARE = [
@@ -129,3 +131,10 @@ MEDIA_URL = 'media/'
 # images uploads that's related to the products
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+
+JAZZMIN_SETTINGS = {
+    "site_title": "E-Commerce Admin",
+    "site_brand": "You order, We deliver",
+    "site_logo": "assets/imgs/logo.png",
+    "copyright": "E-Commerce Ltd"
+}
